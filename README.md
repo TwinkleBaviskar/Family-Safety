@@ -2,9 +2,9 @@
 
 📌 **Project Description**
 
+The Family Safety App is an Android application developed using Kotlin to ensure the safety, connectivity, and real-time monitoring of family members. The app provides live location tracking, battery status monitoring, and instant communication features such as calling and messaging. It also supports offline data storage to ensure reliability even when internet connectivity is limited.
 
-
-The Family Safety App is an Android application developed using Kotlin to ensure the safety, connectivity, and real-time monitoring of family members. The app provides live location tracking, battery status monitoring, and instant communication features such as calling and messaging. It also supports offline data storage to ensure reliability even when internet connectivity is limited. This project demonstrates the use of modern Android components, local databases, and Google Maps integration.
+This project demonstrates the use of modern Android components, local databases, and Google Maps integration.
 
 🎯 **Objectives**
 
@@ -63,7 +63,17 @@ Select the cloned folder
 
 Add Google Maps API Key 
 
-Open local.properties Add:MAPS_API_KEY=YOUR_API_KEY Sync Gradle Files Click Sync Now when prompted Run the Application 
+Open local.properties 
+
+Add:
+    
+    MAPS_API_KEY=YOUR_API_KEY 
+
+Sync Gradle Files 
+
+Click Sync Now when prompted 
+
+Run the Application 
 
 Connect an Android device or start an emulator 
 
@@ -71,7 +81,13 @@ Click Run ▶️
 
 🔄 **Application Workflow**
 
-User adds family members App fetches live location and battery status Data is stored locally for offline access User can call or message members instantly
+User adds family members 
+
+App fetches live location and battery status 
+
+Data is stored locally for offline access 
+
+User can call or message members instantly
 
 🔮 Future Enhancements:
 

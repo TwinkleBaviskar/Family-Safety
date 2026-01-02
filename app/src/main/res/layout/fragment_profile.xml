@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profilephoto"
+            android:id="@+id/imageProfile"
+            android:layout_marginTop="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtusername"
+            android:hint="User Name"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/userdr"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtmobilenumber"
+            android:hint="Mobile number"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/call"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtdob"
+            android:hint="Date Of Birth"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/bod"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtemail"
+            android:hint="Email Id"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/edttext_border_black"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <!-- Display Saved Info -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDisplayMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDisplayDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDisplayEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <!-- Privacy -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textPrivacy"
+            style="@style/SettingItemStyle"
+            android:text="Privacy"
+            android:layout_marginTop="30dp"
+          />
+
+        <!-- Account -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textAccount"
+            style="@style/SettingItemStyle"
+            android:text="Account"/>
+
+        <!-- Notification -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textNotification"
+            style="@style/SettingItemStyle"
+            android:text="Notification"/>
+
+        <!-- Delete Account -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textDeleteAccount"
+            style="@style/SettingItemStyle"
+            android:text="Delete Account"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <!-- Version -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textVersion"
+            style="@style/SettingItemStyle"
+            android:text="Version 1.0.0"
+            android:background="@drawable/item_background_disable"
+            android:textColor="@android:color/darker_gray"
+            android:clickable="false"
+            android:focusable="false"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

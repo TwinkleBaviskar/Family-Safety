@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/upperlogo"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Login to your Account "
+        android:textSize="22dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/emailField"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:imeOptions="actionNext"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordField"
+        android:hint="Password"
+        android:drawableStart="@drawable/lock"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/edttext_border_black"
+        android:padding="10dp"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Or Sign in With -"
+        android:textSize="18dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/google"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/facebook"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Sign up"
+            android:textColor="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".LocationActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="SOS"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sosimage"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="The SOS Feature In Our Family Safety App Is Designed To Help You And Your Loved Ones Stay Safe In Case Of An Emergency. With Just One Tap,You Can Send An SOS Alert To Your Emergency Contacts,Who Will Then Be Able To See Your Location And Track Your Progress To Safety."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

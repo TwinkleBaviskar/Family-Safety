@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:layout_margin="4dp">
+
+    <!-- User Icon -->
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile"
+        android:contentDescription="User Icon"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Contact Name -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- INVITE Button (TextView style) -->
+    <TextView
+        android:id="@+id/invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INVITE"
+        android:textColor="#1E88E5"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+</LinearLayout>

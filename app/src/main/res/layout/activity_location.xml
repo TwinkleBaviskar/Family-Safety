@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".LocationActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Location"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/locationfimg"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="The Location Feature In a Family Safety App Allows Family Members To Share Their Real-Time Location With Each Other.This Can Be Used To Ensure Everyone's Safety, Coordinate Meetups, Or Simply Stay Connected Throughout The Day. The App Typically Uses GPS To Pinpoint The Location And Displays It On a Map. Stay Connected And Secure With The Location Features Of Your Family Safety App. Effortlessly View The Real-Time Whereabouts Of Your Loved Ones On a Private Family Map, Facilitating Easy Coordination And Peace Of Mind."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

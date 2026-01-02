@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".GuardFragment">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SOS Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/pinkcard"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#F6646D"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtSos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOS"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:elevation="16dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/MsgSos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Danger? Instantly Notify Your Trusted Contacts With Your Location."
+                    android:textColor="@color/white"
+                    android:elevation="16dp"
+                    android:layout_below="@id/txtSos"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/img_sos"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:id="@+id/img_sos"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/imgsos"
+                    android:elevation="16dp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Guard Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/greencard"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#63d2c8"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtGaurd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guard"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:elevation="16dp" />
+
+                <TextView
+                    android:id="@+id/MsgGaurd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guard Keeps Watch And Alerts You To Unusual Activity. "
+                    android:textColor="@color/white"
+                    android:elevation="16dp"
+                    android:layout_below="@id/txtGaurd"
+                    android:layout_toStartOf="@id/img_guard"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:id="@+id/img_guard"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/guardimg"
+                    android:elevation="16dp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Location Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#8661ff"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:elevation="16dp" />
+
+                <TextView
+                    android:id="@+id/Msglocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tailor Your Experience With Location Specific Suggestions."
+                    android:textColor="@color/white"
+                    android:elevation="16dp"
+                    android:layout_below="@id/txtlocation"
+                    android:layout_toStartOf="@id/img_location"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/locationimg"
+                    android:elevation="16dp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

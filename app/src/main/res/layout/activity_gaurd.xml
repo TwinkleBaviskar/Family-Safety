@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".LocationActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Gaurd"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gaurd_img"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="The Guard Feature In Our Family Safety App Acts As a Proactive Digital Companion,Offering Peace Of Mind By Allowing Designated Family Members To Virtually Accompany Others During Journeys Or When Feeling Unsafe. With a Tap, a User Can Initiate a Guarded Session, Sharing Their Real-Time Location With Their Guardians. Guardians Can Monitor Their Progress On a Map And Receive Instant Alerts If The User Deviates From Their Expected Path Or Triggers An SOS."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

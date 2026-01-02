@@ -53,9 +53,25 @@ Active Google Maps API Key
 
     git clone https://github.com/your-username/family-safety-app.git 
     
-Open in Android Studio Open Android Studio Click Open an existing project Select the cloned folder Add Google Maps API Key Open local.properties Add:MAPS_API_KEY=YOUR_API_KEY Sync Gradle Files Click Sync Now when prompted Run the Application Connect an Android device or start an emulator Click Run ▶️
+Open in Android Studio 
 
-🔄 Application Workflow User adds family members App fetches live location and battery status Data is stored locally for offline access User can call or message members instantly
+Open Android Studio 
+
+Open an existing project 
+
+Select the cloned folder 
+
+Add Google Maps API Key 
+
+Open local.properties Add:MAPS_API_KEY=YOUR_API_KEY Sync Gradle Files Click Sync Now when prompted Run the Application 
+
+Connect an Android device or start an emulator 
+
+Click Run ▶️
+
+🔄 **Application Workflow**
+
+User adds family members App fetches live location and battery status Data is stored locally for offline access User can call or message members instantly
 
 🔮 Future Enhancements:
 

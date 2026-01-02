@@ -43,7 +43,11 @@ Build a scalable and user-friendly Android application
 
 ⚙️ **Installation Guide**
 
-🔧 Prerequisites Android Studio (latest version recommended) Android device or emulator (Android 8.0 or above) Active Google Maps API Key
+🔧 Prerequisites 
+    
+    Android Studio (latest version recommended) or emulator (Android 8.0 or above) 
+    
+Active Google Maps API Key
 
 📥 Steps to Install & Run Clone the Repository
 
